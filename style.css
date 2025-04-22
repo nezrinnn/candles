@@ -1,0 +1,324 @@
+.catalog {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.catalog h1 {
+    margin-bottom: 40px;
+    color: #7d5a50;
+    font-family: 'Playfair Display', serif;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.catalog-item {
+    background-color: #fffaf2;
+    border: 1px solid #e7d7c9;
+    padding: 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #7d5a50;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.catalog-item:hover {
+    background-color: #f6e7d8;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form button {
+    background-color: #7d5a50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #a47449;
+}
+/* Ümumi tənzimləmələr */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Naviqasiya menyusu */
+  .navbar {
+    background-color: #ffffff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #7d5a50;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #7d5a50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #a47449;
+  }
+  
+  /* Hero bölməsi */
+  .hero {
+    background-image: url('https://i.pinimg.com/236x/3c/3b/46/3c3b4680f34e7ee1b7a700673badcfe3.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    inset: 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  
+  .btn {
+    background-color: #7d5a50;
+    color: white;
+    padding: 12
+  }
+  /* Reset & font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fffaf5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #7d5a50;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #7d5a50;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #a47449;
+}
+
+/* Hero bölməsi */
+.hero {
+  background-image: url('https://i.pinimg.com/236x/3c/3b/46/3c3b4680f34e7ee1b7a700673badcfe3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 130px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  background-color: #7d5a50;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #a47449;
+}
+
+/* Footer */
+footer {
+  background-color: #f6e7d8;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+footer h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 25px;
+  color: #7d5a50;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #7d5a50;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #a47449;
+}
+
+.social {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social img:hover {
+  transform: scale(1.1);
+}
+
+footer .copyright {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #7d5a50;
+}
+  
